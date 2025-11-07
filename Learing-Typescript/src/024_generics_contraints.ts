@@ -13,3 +13,24 @@ console.log(lenN4({ length: 10, tag: "ok" })); // object with length property
 
 // ❌ ERROR — number doesn't have a .length
 // console.log(lenN4(123));
+
+
+type UserN6 = {
+  id : string;
+  name : string;
+  age? : number
+}
+
+function userN6Extract<T , K extends keyof T>(arrN4 : T[], keyN4: K) : Array<T[K]>{
+  return arrN4.map(item=>item[keyN4])
+}
+const userN5 : UserN6[] = [
+  {
+    id: '1', name : 'name1', age: 22
+  },
+  {
+    id: '2', name : 'name2', 
+  }
+]
+
+console.log(userN6Extract(userN5, 'age'))

@@ -9,5 +9,15 @@ function lenN4(xN4) {
 console.log(lenN4("hello")); // string → has .length
 console.log(lenN4([1, 2, 3, 4, 5])); // array → has .length
 console.log(lenN4({ length: 10, tag: "ok" })); // object with length property
-// ❌ ERROR — number doesn't have a .length
-// console.log(lenN4(123));
+function userN6Extract(arrN4, keyN4) {
+    return arrN4.map(item => item[keyN4]);
+}
+const userN5 = [
+    {
+        id: '1', name: 'name1', age: 22
+    },
+    {
+        id: '2', name: 'name2',
+    }
+];
+console.log(userN6Extract(userN5, 'age'));
