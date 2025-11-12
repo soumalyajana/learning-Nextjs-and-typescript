@@ -37,10 +37,3 @@ console.log(`Initial: ${t.celsius}°C = ${t.fahrenheit}°F`);
 t.fahrenheit = 212; // 212°F → 100°C
 console.log(`Updated: ${t.celsius}°C = ${t.fahrenheit}°F`);
 
-
-
-/////////
-
-
-const hello = `How are are yiu boy `
-"hellooooooooo How are you my boy this is the learing process of the laptop"
