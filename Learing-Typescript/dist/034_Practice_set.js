@@ -30,4 +30,18 @@ function move(direction) {
 }
 move("up"); // ✅ OK
 move("down"); // ✅ OK
-// move("forward"); // ❌ Error: Argument not assignable to type 'Direction'
+const variable34 = {
+    name: "Soumalya Jana",
+    age: 22,
+    hight: 5.9
+};
+console.log(variable34.name);
+console.log(variable34.hight);
+console.log(variable34.age);
+// Mock JSON (could come from API)
+const jsonData = '{"id": 1, "username": "soumalya", "email": "soumalya@example.com"}';
+// Parse JSON (returns type `any` by default)
+const user = JSON.parse(jsonData); // ✅ type assertion
+console.log(user.id); // 1
+console.log(user.username); // soumalya
+console.log(user.email); // soumalya@example.com

@@ -45,3 +45,42 @@ function move(direction: Direction) {
 move("up");    // ✅ OK
 move("down");  // ✅ OK
 // move("forward"); // ❌ Error: Argument not assignable to type 'Direction'
+
+
+// Day 3: Objects & Type Assertions
+// 🟢 Easy: Define an object type Person and create a variable of that type.
+// 🟡 Medium: Fetch a JSON object (mock) and use type assertions (as) to cast it into a User type.
+
+type Person122 = {
+  name : string,
+  age : number,
+  hight : number
+}
+
+const variable34 : Person122 = {
+  name : "Soumalya Jana",
+  age : 22,
+  hight : 5.9
+}
+
+console.log(variable34.name);
+console.log(variable34.hight);
+console.log(variable34.age);
+
+
+
+type User55 = {
+  id: number;
+  username: string;
+  email: string;
+};
+
+// Mock JSON (could come from API)
+const jsonData = '{"id": 1, "username": "soumalya", "email": "soumalya@example.com"}';
+
+// Parse JSON (returns type `any` by default)
+const user = JSON.parse(jsonData) as User55; // ✅ type assertion
+
+console.log(user.id);       // 1
+console.log(user.username); // soumalya
+console.log(user.email);    // soumalya@example.com
