@@ -45,3 +45,17 @@ const user = JSON.parse(jsonData); // ✅ type assertion
 console.log(user.id); // 1
 console.log(user.username); // soumalya
 console.log(user.email); // soumalya@example.com
+// Day 4: as const & Readonly
+// 🟢 Easy: Create a colors object using as const.
+// 🟡 Medium: Try modifying the value and observe TypeScript errors; explain why.
+const person3333 = {
+    name: "Soumalya",
+    role: "developer",
+    level: 1
+};
+// person.level = 2; ❌ Error: Cannot assign to 'level' because it is a read-only property.
+console.log(person3333.name); // "Soumalya"
+console.log(person3333.role); // "developer"
+console.log(person3333.level); // 1
+const skill = ["TS", "React", "Node"];
+console.log(skill);
