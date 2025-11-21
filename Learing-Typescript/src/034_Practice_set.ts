@@ -107,5 +107,7 @@ console.log(person3333.level);    // 1
 
 
 
+////////////
+
 const skill : readonly string[] = ["TS", "React", "Node"];
 console.log(skill);
