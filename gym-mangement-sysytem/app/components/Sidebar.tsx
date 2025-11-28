@@ -8,7 +8,11 @@ import {
     Calendar,
     Settings,
     Dumbbell,
-    LogOut
+    LogOut,
+    Bot,
+    Map,
+    Trophy,
+    ShoppingBag
 } from "lucide-react";
 import { clsx } from "clsx";
 
@@ -17,6 +21,10 @@ const navigation = [
     { name: "Members", href: "/members", icon: Users },
     { name: "Schedule", href: "/schedule", icon: Calendar },
     { name: "Workouts", href: "/workouts", icon: Dumbbell },
+    { name: "AI Coach", href: "/ai-coach", icon: Bot },
+    { name: "Floor Plan", href: "/floor-plan", icon: Map },
+    { name: "Leaderboard", href: "/leaderboard", icon: Trophy },
+    { name: "Shop", href: "/shop", icon: ShoppingBag },
     { name: "Settings", href: "/settings", icon: Settings },
 ];
 
